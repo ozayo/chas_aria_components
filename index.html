@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <div>
+      <a href="index.html">Chas Aria</a>
+    </div>
+    <div>
+      <button id="menuButton">Meny</button>
+      <nav id="menuContent" role="navigation">
+        <ul>
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Tjänster</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section>
+      <h1>Chas Aria Components</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        similique ducimus placeat nostrum, sint molestias voluptatibus aperiam
+        porro modi magni laboriosam necessitatibus consequatur consequuntur
+        cupiditate itaque facilis, maxime vero quas.
+      </p>
+      <button id="openModalBtn" onclick="openModal()">Open Modal</button>
+      <button id="openDialogBtn" onclick="openDialog()">Open Dialog</button>
+    </section>
+  </main>
+  <footer>
+    <p>Chas Workshop</p>
+    <p>Tillgängliga webbkomponenter med WAI-ARIA</p>
+  </footer>
+  <div id="accessibleModal">
+    <h2 id="modalTitle">Exempel på modalfönster</h2>
+    <p>Här är lite text i modalfönstret.</p>
+    <button id="closeModalBtn" onclick="closeModal()">Stäng</button>
+  </div>
+  <dialog id="accessibleDialog">
+    <h2>Exempel på tillgängligt modalfönster med &lt;dialog&gt;</h2>
+    <p>Här är innehållet i modalfönstret.</p>
+    <button id="closeDialogBtn" onclick="closeDialog()">Stäng</button>
+  </dialog>
+
+<script src="code.js"></script>
+</body>
+</html>
+

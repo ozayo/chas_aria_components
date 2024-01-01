@@ -1,0 +1,134 @@
+/* styles.css */
+
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  color: #007bff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1042px;
+  margin: 0 auto;
+}
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  position: relative;
+  background-color: #f2f2f2;
+  align-items:center;
+  margin-bottom: 50px;
+}
+
+/* Modalfönster stil */
+#accessibleModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#accessibleModal h2 {
+  color: #333;
+}
+
+#closeModalBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* <dialog> stil */
+/* #accessibleDialog {
+  display: none;
+} */
+
+#accessibleDialog h2 {
+  color: #333;
+}
+
+#closeDialogBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+dialog::backdrop {
+  background-color: #0000008c;
+}
+
+/* Hamburgarmeny stil */
+#menuContent {
+  display: none;
+}
+
+#menuContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menuContent li {
+  margin-bottom: 10px;
+}
+
+#menuButton {
+  padding: 8px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#menuButton:hover{
+  background-color: #007bff;
+}
+
+/* Hamburgarmeny stil */
+#menuContent {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  background-color: #f2f2f2;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  padding: 20px;
+  width: 150px;
+  text-align: right;
+}
+
+#menuContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menuContent li {
+  margin-bottom: 10px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 50px;
+}
